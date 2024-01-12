@@ -20,5 +20,212 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2587130F-C87A-453F-BF69-86F601FE584A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BauBuddyTaskApp/Service/TaskService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "fetchTasks(with:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF23E5A4-710C-49AD-B2E2-A621F100CEC0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BauBuddyTaskApp/Views/TaskListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "fetchTasks(auth:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EF23E5A4-710C-49AD-B2E2-A621F100CEC0 - afb66ceba05aadb4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BauBuddyTaskApp.TaskListView.fetchTasks(auth: BauBuddyTaskApp.Auth) -&gt; ()"
+                  moduleName = "BauBuddyTaskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ezgikarabay/Desktop/test5/BaubuddyTaskApp/BauBuddyTaskApp/Views/TaskListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "EF23E5A4-710C-49AD-B2E2-A621F100CEC0 - 3cb050ad4eadf3dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;BauBuddyTaskApp.Task&gt;, Swift.Error&gt;) -&gt; () in BauBuddyTaskApp.TaskListView.fetchTasks(auth: BauBuddyTaskApp.Auth) -&gt; ()"
+                  moduleName = "BauBuddyTaskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ezgikarabay/Desktop/test5/BaubuddyTaskApp/BauBuddyTaskApp/Views/TaskListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "EF23E5A4-710C-49AD-B2E2-A621F100CEC0 - c73b4e21991ae9b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;BauBuddyTaskApp.Task&gt;, Swift.Error&gt;) -&gt; () in BauBuddyTaskApp.TaskListView.fetchTasks(auth: BauBuddyTaskApp.Auth) -&gt; ()"
+                  moduleName = "BauBuddyTaskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ezgikarabay/Desktop/test5/BaubuddyTaskApp/BauBuddyTaskApp/Views/TaskListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62DD45FC-1347-4838-88CA-03017C6A5F0E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BauBuddyTaskApp/Views/TaskListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "refreshData(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1BA4D51C-E5F0-4C16-919C-7993126DAB2A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BauBuddyTaskApp/Views/TaskListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A169C392-D714-4FAD-9426-5AF62C9F3875"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BauBuddyTaskApp/Views/TaskListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "TaskListView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A169C392-D714-4FAD-9426-5AF62C9F3875 - 69e6ad21f4d54cda"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BauBuddyTaskApp.TaskListView.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; BauBuddyTaskApp.TaskListView"
+                  moduleName = "BauBuddyTaskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ezgikarabay/Desktop/test5/BaubuddyTaskApp/BauBuddyTaskApp/Views/TaskListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "A169C392-D714-4FAD-9426-5AF62C9F3875 - cc71f05b88806551"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BauBuddyTaskApp.TaskListView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;BauBuddyTaskApp.TaskListView&gt;"
+                  moduleName = "BauBuddyTaskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ezgikarabay/Desktop/test5/BaubuddyTaskApp/BauBuddyTaskApp/Views/TaskListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BC7FFF1-B36F-401A-9635-D84C23AC6B71"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BauBuddyTaskApp/Views/TaskListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD4A844B-2EF1-4763-943B-7DDA29FF14D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BauBuddyTaskApp/Views/TaskListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74778EB4-3242-469F-B8AD-1932B95C6306"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BauBuddyTaskApp/Views/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

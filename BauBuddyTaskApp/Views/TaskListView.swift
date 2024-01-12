@@ -40,7 +40,7 @@ class TaskListView: UIViewController {
         
         
         
-        if let auth = auth {
+        if let auth = self.auth {
             fetchTasks(auth: auth)
         }
     }

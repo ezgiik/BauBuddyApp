@@ -17,7 +17,7 @@ class LoginView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     func performLogin() {
                 guard let username = usernameText.text, !username.isEmpty,
