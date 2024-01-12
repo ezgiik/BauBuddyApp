@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "reachability.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashleymills/Reachability.swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a81b7367f2c46875f29577e03a60c39cdfad0c8d"
+      }
+    },
+    {
+      "identity" : "swifthexcolors",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thii/SwiftHEXColors",
+      "state" : {
+        "revision" : "1f886cb20fedda14a5ac75efd09bc99c95b43a18",
+        "version" : "1.4.1"
+      }
+    }
+  ],
+  "version" : 2
+}
