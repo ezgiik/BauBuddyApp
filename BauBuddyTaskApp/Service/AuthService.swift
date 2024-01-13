@@ -55,7 +55,7 @@ class AuthService {
                    let accessToken = oauth["access_token"] as? String {
                     
                     let auth = Auth(accessToken: accessToken)
-                    self.saveToken(accessToken) 
+                    self.saveToken(accessToken)
                     completion(.success(auth))
                 } else {
                     let error = NSError(domain: "LoginErrorDomain", code: 3, userInfo: [NSLocalizedDescriptionKey: "Invalid JSON format or missing keys"])
@@ -70,11 +70,10 @@ class AuthService {
     }
     
     func logout() {
-            UserDefaults.standard.removeObject(forKey: "accessToken")
-            
-        }
+        UserDefaults.standard.removeObject(forKey: "accessToken")
+        
+    }
 }
-
 extension AuthService {
     func saveToken(_ token: String) {
         UserDefaults.standard.set(token, forKey: "accessToken")

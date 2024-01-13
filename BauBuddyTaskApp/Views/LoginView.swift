@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginView: UIViewController {
-
+    
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
@@ -16,9 +16,15 @@ class LoginView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
     }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
     func performLogin() {
                 guard let username = usernameText.text, !username.isEmpty,
                       let password = passwordText.text, !password.isEmpty
@@ -31,10 +37,8 @@ class LoginView: UIViewController {
                     switch result {
                     case .success(let auth):
                         
-                        
                         print("Access Token: \(auth.accessToken)")
 
-                        
                         DispatchQueue.main.async {
                             self.performSegue(withIdentifier: "toNext", sender: auth)
                         }
@@ -45,9 +49,11 @@ class LoginView: UIViewController {
                 }
             }
     
-    @IBAction func loginButtonClicked(_ sender: Any) {
+    @IBAction func loginClicked(_ sender: Any) {
         performLogin()
     }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "toNext" {
@@ -58,7 +64,4 @@ class LoginView: UIViewController {
                 }
             }
         }
-
-    
-
 }

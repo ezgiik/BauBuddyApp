@@ -9,7 +9,7 @@ import UIKit
 import SwiftHEXColors
 
 class TaskListView: UIViewController {
-
+    
     
     @IBOutlet weak var taskTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -22,13 +22,10 @@ class TaskListView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         taskTableView.dataSource = self
         taskTableView.delegate = self
         searchBar.delegate = self
-        
-        
         
         refreshControl.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
         taskTableView.addSubview(refreshControl)
@@ -36,8 +33,6 @@ class TaskListView: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tapGesture.cancelsTouchesInView = false
         view.addGestureRecognizer(tapGesture)
-        
-        
         
         
         if let auth = self.auth {
@@ -90,28 +85,34 @@ extension TaskListView: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-
 // MARK: - UISearchBarDelegate
 extension TaskListView: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filterTasks(with: searchText)
+        taskTableView.reloadData()
+    }
+    
+    private func filterTasks(with searchText: String) {
         if searchText.isEmpty {
             filteredTasks = viewModel.tasks
         } else {
-            filteredTasks = viewModel.tasks.filter { task in
-                return (task.title?.contains(searchText) ?? false) ||
-                (task.description?.contains(searchText) ?? false) ||
-                (task.businessUnit?.contains(searchText) ?? false) ||
-                (task.task?.contains(searchText) ?? false) ||
-                (task.colorCode?.contains(searchText) ?? false) ||
-                (task.businessUnitKey?.contains(searchText) ?? false) ||
-                (task.wageType?.contains(searchText) ?? false) ||
-                (task.sort?.contains(searchText) ?? false) ||
-                (task.parentTaskID?.contains(searchText) ?? false) ||
-                (task.preplanningBoardQuickSelect?.contains(searchText) ?? false) ||
-                (task.workingTime?.contains(searchText) ?? false) ||
-                (task.isAvailableInTimeTrackingKioskMode.description.contains(searchText))
-            }
+            filteredTasks = viewModel.tasks.filter { taskContainsSearchText($0, searchText) }
         }
-        taskTableView.reloadData()
+    }
+    
+    private func taskContainsSearchText(_ task: Task, _ searchText: String) -> Bool {
+        return (task.title?.lowercased().contains(searchText.lowercased()) ?? false) ||
+        (task.description?.lowercased().contains(searchText.lowercased()) ?? false) ||
+        (task.businessUnit?.lowercased().contains(searchText.lowercased()) ?? false) ||
+        (task.task?.lowercased().contains(searchText.lowercased()) ?? false) ||
+        (task.colorCode?.lowercased().contains(searchText.lowercased()) ?? false) ||
+        (task.businessUnitKey?.lowercased().contains(searchText.lowercased()) ?? false) ||
+        (task.wageType?.lowercased().contains(searchText.lowercased()) ?? false) ||
+        (task.sort?.lowercased().contains(searchText.lowercased()) ?? false) ||
+        (task.parentTaskID?.lowercased().contains(searchText.lowercased()) ?? false) ||
+        (task.preplanningBoardQuickSelect?.lowercased().contains(searchText.lowercased()) ?? false) ||
+        (task.workingTime?.lowercased().contains(searchText.lowercased()) ?? false) ||
+        (task.isAvailableInTimeTrackingKioskMode.description.contains(searchText))
     }
 }
+

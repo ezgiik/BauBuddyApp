@@ -10,9 +10,7 @@ import Foundation
 
 class TaskViewModel {
     var tasks: [Task] = []
-
-
-   
+    
     func fetchTasks(auth: Auth, completion: @escaping (Result<[Task], Error>) -> Void) {
         if CoreDataManager.shared.isOffline() {
             

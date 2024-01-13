@@ -25,12 +25,12 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         super.viewWillAppear(animated)
         startScanning()
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         stopScanning()
     }
-
+    
     func setupScanner() {
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
             failed()
@@ -78,7 +78,7 @@ class QRScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     func setupUI() {
         qrCodeFrameView = UIView()
-
+        
         if let qrCodeFrameView = qrCodeFrameView {
             qrCodeFrameView.layer.borderColor = UIColor.green.cgColor
             qrCodeFrameView.layer.borderWidth = 2

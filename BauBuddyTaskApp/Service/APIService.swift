@@ -27,6 +27,4 @@ class APIService {
                 completion(result)
             }
         }
-
-
 }

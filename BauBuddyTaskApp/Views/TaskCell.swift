@@ -36,7 +36,6 @@ class TaskCell: UITableViewCell {
                     cellView.backgroundColor = UIColor(hexString: hexColor)
                 }
             }
-
     }
         
 

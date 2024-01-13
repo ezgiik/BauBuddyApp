@@ -13,9 +13,9 @@ class TaskService {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.addValue("Bearer \(auth.accessToken)", forHTTPHeaderField: "Authorization")
-
-
-       let session = URLSession.shared
+        
+        
+        let session = URLSession.shared
         let dataTask = session.dataTask(with: request) { (data, response, error) in
             if let error = error {
                 completion(.failure(error))
@@ -36,8 +36,7 @@ class TaskService {
                 }
             }
         }
-
-
-       dataTask.resume()
+        
+        dataTask.resume()
     }
 }
