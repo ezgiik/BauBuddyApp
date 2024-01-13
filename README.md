@@ -32,7 +32,7 @@ Here are some screenshots of the application in the simulator:
 
 <table>
   <tr>
-    <td><img src="https://github.com/ezgiik/BauBuddyApp/assets/128503981/5dc97fbf-d99b-42c0-b679-ab72798a0582" alt="Screenshot 1" width="300"/></td>
+    <td><img src="https://github.com/ezgiik/BauBuddyApp/assets/128503981/223bff74-0a89-4c5f-8c22-eddef1a63def" alt="Screenshot 1" width="300"/></td>
     <td><img src="https://github.com/ezgiik/BauBuddyApp/assets/128503981/3a3ce857-af9f-430d-8e3d-151085dbdbb9" alt="Screenshot 2" width="300"/></td>
   </tr>
   <tr>
