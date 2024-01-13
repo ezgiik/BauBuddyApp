@@ -31,10 +31,6 @@ class TaskService {
             if let httpResponse = response as? HTTPURLResponse {
                 if httpResponse.statusCode == 401 {
                     DispatchQueue.main.async {
-                        // Here you would need to implement the logic to redirect to the LoginView.
-                        // For example, you can use NotificationCenter to post a notification
-                        // that the SceneDelegate or AppDelegate listens for to change the rootViewController,
-                        // or if you have a reference to the navigationController you can pop to the desired viewController.
                         NotificationCenter.default.post(name: NSNotification.Name("UnauthorizedAccessDetected"), object: nil)
                     }
                 }
